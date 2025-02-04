@@ -15,6 +15,9 @@ winget install -e --id Oracle.VirtualBox --silent --accept-source-agreements
 ## Install latest GIT Release
 winget install -e --id Git.Git --silent --accept-source-agreements
 
+## Install Latest Vagrant Release
+winget install --id=Hashicorp.Vagrant  -e
+
 ##Refresh powershell Profile
 $userpath = [System.Environment]::GetEnvironmentVariable("Path","User")
 $machinePath = [System.Environment]::GetEnvironmentVariable("Path","Machine")
