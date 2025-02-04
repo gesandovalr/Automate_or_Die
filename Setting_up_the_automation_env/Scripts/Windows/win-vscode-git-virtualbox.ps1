@@ -15,8 +15,8 @@ winget install -e --id Oracle.VirtualBox --silent --accept-source-agreements
 ## Install latest GIT Release
 winget install -e --id Git.Git --silent --accept-source-agreements
 
-## Install Latest Vagrant Release
-winget install --id=Hashicorp.Vagrant  -e
+## Install Latest Terraform Release
+winget install --id=Hashicorp.Terraform  -e
 
 ##Refresh powershell Profile
 $userpath = [System.Environment]::GetEnvironmentVariable("Path","User")
@@ -25,6 +25,6 @@ $env:Path = $userpath + ";" + $machinePath
 
 ## Setup out git.username and git.email
 git config --global user.name "automateordie"
-gi
+
 ## Setup out git.username and git.email
 git config --global user.email "automateordie@aod.org"
