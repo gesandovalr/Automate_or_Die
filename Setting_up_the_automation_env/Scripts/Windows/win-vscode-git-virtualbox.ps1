@@ -15,8 +15,13 @@ winget install -e --id Oracle.VirtualBox --silent --accept-source-agreements
 ## Install latest GIT Release
 winget install -e --id Git.Git --silent --accept-source-agreements
 
-## Setup out git.username and git.email
-git config --global user.name "aod"
+##Refresh powershell Profile
+$userpath = [System.Environment]::GetEnvironmentVariable("Path","User")
+$machinePath = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+$env:Path = $userpath + ";" + $machinePath
 
 ## Setup out git.username and git.email
-git config --global user.email "aod@aod.org"
+git config --global user.name "automateordie"
+gi
+## Setup out git.username and git.email
+git config --global user.email "automateordie@aod.org"
